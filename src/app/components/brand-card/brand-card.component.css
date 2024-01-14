@@ -1,0 +1,9 @@
+img {
+  display: block;
+  max-height: 18rem;
+  min-height: 18rem;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}

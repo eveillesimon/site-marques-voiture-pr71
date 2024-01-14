@@ -1,0 +1,50 @@
+<h2>Add Brand</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    Id :
+    <input type="number" formControlName="id">
+  </div>
+  <div class="error" *ngIf="id?.invalid&& (id?.dirty|| id?.touched)">
+    <div *ngIf="id?.errors?.required">Id is required</div>
+  </div>
+  <div>
+    Name :
+    <input type="text" formControlName="name">
+  </div>
+  <div class="error" *ngIf="name?.invalid&& (name?.dirty|| name?.touched)">
+    <div *ngIf="name?.errors?.required">Name is required</div>
+  </div>
+  <div>
+    Market :
+    <input type="text" formControlName="market">
+  </div>
+  <div class="error" *ngIf="market?.invalid&& (market?.dirty|| market?.touched)">
+    <div *ngIf="market?.errors?.required">Market is required</div>
+  </div>
+  <div>
+    Founder :
+    <input type="text" formControlName="founder">
+  </div>
+  <div class="error" *ngIf="founder?.invalid&& (founder?.dirty|| founder?.touched)">
+    <div *ngIf="founder?.errors?.required">Founder is required</div>
+  </div>
+  <div>
+    Foundation date :
+    <input type="date" formControlName="foundation">
+  </div>
+  <div class="error" *ngIf="foundation?.invalid&& (foundation?.dirty|| foundation?.touched)">
+    <div *ngIf="foundation?.errors?.required">Foundation date is required</div>
+  </div>
+  <div>
+    Country :
+    <input type="text" formControlName="country">
+  </div>
+  <div class="error" *ngIf="country?.invalid&& (country?.dirty|| country?.touched)">
+    <div *ngIf="country?.errors?.required">Country code is required</div>
+  </div>
+  <div>
+    Image :
+    <input type="file" formControlName="image">
+  </div>
+  <button type="submit" [disabled]="form.invalid">Save</button>
+</form>

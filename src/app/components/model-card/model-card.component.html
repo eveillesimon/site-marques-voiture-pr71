@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="model.imagePath" class="card-img-top" alt="{{model.name}} Picture">
+  <div class="card-body">
+    <p class="card-text"><strong>Model Name: {{ model.name }} </strong></p>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Release date : {{ model.release | date : 'dd/MM/YYYY'}} </li>
+      <li class="list-group-item">Engine : {{ model.engine }}</li>
+      <li class="list-group-item">Power (HP) : {{ model.horsePower }}</li>
+    </ul>
+  </div>
+
+</div>

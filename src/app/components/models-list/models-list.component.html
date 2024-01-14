@@ -1,0 +1,7 @@
+<h2>{{brand.name}}'s car models</h2>
+<p>{{models.length}} model(s) found.</p>
+<div class="container">
+  <div class="row row-cols-4">
+    <app-model-card *ngFor="let m of models" [model]="m"></app-model-card>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    {{ brand.name }}
+  </div>
+  <img [src]="brand.imagePath" class="card-img-top" alt="{{brand.name}} Logo">
+  <div class="card-body">
+    <p class="card-text"><strong>Market : {{ brand.market }} </strong></p>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Founder : {{ brand.founder }} </li>
+      <li class="list-group-item">Foundation Date : {{ brand.foundation | date : 'dd/MM/YYYY' }}</li>
+      <li class="list-group-item">Country : {{ brand.country }}</li>
+    </ul>
+    <a routerLink="/brands/{{brand.name}}" class="btn btn-primary">Browse models</a>
+  </div>
+
+</div>
