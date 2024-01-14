@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Brand} from "../models/brand";
 import {HttpClient} from "@angular/common/http";
-import {Observable, switchMap} from "rxjs";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'

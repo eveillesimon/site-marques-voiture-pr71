@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {Model} from "../../models/model";
-import {ModelService} from "../../services/model.service";
 import {DatePipe} from "@angular/common";
 import {RouterLink} from "@angular/router";
 

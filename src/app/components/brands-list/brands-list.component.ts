@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {Brand} from "../../models/brand";
 import {BrandService} from "../../services/brand.service";
 import {BrandCardComponent} from "../brand-card/brand-card.component";
